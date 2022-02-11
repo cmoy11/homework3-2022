@@ -97,6 +97,7 @@ a.skip:focus{
   position:fixed;
   left: 0px;
   outline: none;
+  border-top: 2px solid yellow;
 }
 
 
@@ -110,14 +111,13 @@ nav a:focus {
   /* Requirement 5 code here*/
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-row-gap: 30px;
+  row-gap: 30px;
 }
 
 /* Requirements 6-10 here: */
 .intro {
   background-image: url("/images/header.jpg");
   height: 100%;
-  z-index: 5;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -136,7 +136,6 @@ img {
 
 .about-image, .clients-image, .method-image,  .contact-image {
   grid-column: 1/-1;
-  height: 100%;
   max-height: 500px;
   overflow: hidden;
 }
@@ -160,7 +159,6 @@ img {
 /* Need to fix */
 .text {
   align-self: center;
-  position: relative;
   max-height: 25vh;
   overflow: scroll;
 }
@@ -183,6 +181,7 @@ img {
     text-align: left;
     margin-top: 20px;
     outline: none;
+    border-top: 2px solid yellow;
   }
 
   .container {
